@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* HEADER */
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 65px;
+  }
+
+  .main_menu {
+      display: flex;
+      width: 490px;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+  }
+
+  .text_logo {
+    color: #95e1d3;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;    
+  }
+  
+  .menu_item {
+    list-style: none;
+  }
+
+  .menu_item a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #95e1d3;
+    position: relative;
+  }
+
+  .menu_item a:hover {
+      color: #f38181;
+  }
+
+  .line {
+    margin-top: 12px;
+    height: 3px;
+    background: #f38181;
+    opacity: 0;
+    transition: all .5s;  
+}
+
+.menu_item:hover > .line {
+    display: block;
+    opacity: 1;
+    background: #f38181;
+    transition: all .5s;
+    animation: lineanimation 200ms linear ;
+}
+
+@keyframes lineanimation {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+    /* SERVICE */
+
+p {
+  display: block;
+  text-align: center;
+}
+
+.curve_text {
+  margin-top: 100px;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.top_text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 42px;
+  margin-top: 20px;
+}
+
+.line_1 {
+  height: 3px;
+  width: 60px;
+  background-color: #f38181;
+  margin-left: 570px;
+  margin-bottom: 70px;
+}
+
+.features_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features_list_item {
+  flex-basis: 390px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-bottom: 100px;  
+}
+
+.features_block {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-style: 14px;
+  text-align: left;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.block_text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  text-align: left;
+  margin: 0 0 0 96px;
+}
+
+.img {
+  margin: 0 30px -18px 30px;
+  cursor: pointer;
+}
+ 
+    /* TEAM */
+
+.curve_text_2 {
+  margin: 0;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.line_2 {
+  height: 3px;
+  width: 60px;
+  background-color: #f38181;
+  margin-left: 570px;
+  margin-bottom: 30px;
+}
+
+.lorem {
+  display: inline-block;
+  width: 942px;
+  text-align: center;
+  margin: 0 0 95px 130px;
+  font-family: 'Roboto',  sans-serif;
+  font-weight: 300;
+  font-style: 15px;
+  color: #999999;
+}
+
+.team_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list_team_item {
+  position: relative;
+}
+
+.overlay_img {
+  background: rgb(149, 225, 211);
+  position: absolute;
+  width: 380px;
+  height: 10px;
+  opacity: 0;
+  left: 0;
+  top: 460px;
+}
+
+.overlay_img_1 {
+  background: rgb(149, 225, 211);
+  position: absolute;
+  width: 10px;
+  height: 460px;
+  opacity: 0;
+  left: 370px;
+  top: 0px;
+}
+
+.overlay {
+  left: -10px;
+  top: -10px;
+  width: 380px;
+  height: 470px;
+  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  position: absolute;
+  opacity: 0;
+}
+
+.overlay_icon_1 {
+  width: 55px;
+  height: 55px;
+  background-color: #fce38a;
+  display: inline-block;
+  position: absolute;
+  top: 207px;
+  left: 78px;
+  cursor: pointer;
+}
+
+.overlay_icon_fb {
+  position: absolute;
+  top: 15px;
+  left: 22px;
+}
+
+.overlay_icon_1:hover {
+  background-color: #95e1d3;
+}
+
+.overlay_icon_2 {
+  width: 55px;
+  height: 55px;
+  background-color: #fce38a;
+  display: inline-block;
+  position: absolute;
+  top: 207px;
+  left: 134px;
+  cursor: pointer;
+}
+
+.overlay_icon_tw {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+}
+
+.overlay_icon_2:hover {
+  background-color: #95e1d3;
+}
+
+.overlay_icon_3 {
+  width: 55px;
+  height: 55px;
+  background-color: #fce38a;
+  display: inline-block;
+  position: absolute;
+  top: 207px;
+  left: 190px;
+  cursor: pointer;
+}
+
+.overlay_icon_pn {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+}
+
+.overlay_icon_3:hover {
+  background-color: #95e1d3;
+}
+
+.overlay_icon_4 {
+  width: 55px;
+  height: 55px;
+  background-color: #fce38a;
+  display: inline-block;
+  position: absolute;
+  top: 207px;
+  left: 246px;
+  cursor: pointer;
+}
+
+.overlay_icon_ig {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+}
+
+.overlay_icon_4:hover {
+  background-color: #95e1d3;
+}
+
+.list_team_item:hover .overlay {
+  opacity: .9;
+  z-index: 2;
+  transition: all .5s;
+  animation: lineanimation 200ms linear ;
+}
+
+@keyframes lineanimation {
+  0% {
+      width: 0;
+  }
+  100% {
+      width: 100%;
+  }
+}
+
+
+.list_team_item:hover .overlay_img {
+  opacity: .9;
+  z-index: 1;
+}
+
+.list_team_item:hover .overlay_img_1 {
+  opacity: .9;
+  z-index: 1;
+}
+
+hr {
+  margin: 0;
+}
+
+.name_guy {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.prof_guy {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+  margin-bottom: 85px;
+  color: #acacac;
+}
+
+    /* FOOTER */
+
+.footer_text {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.MoGo {
+  display: inline-block;
+  margin-top: 27px;
+  margin-bottom: 27px;
+  margin-left: 5px;
+}
+.color_text {
+  display: inline-block;
+  color: #f38181;
+  margin-top: 27px;
+  margin-left: 5px;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-top: 10px;
+  }
+
+
+.button_mail {
+  font-weight: 700;
+  color: #fff;
+  background-color: #95e1d3;
+  width: 150px;
+  height: 40px;
+  display: inline-block;
+  margin-left: -5px;
+}
+
+.button_mail:hover {
+  cursor: pointer;
+}
+
+.e_mail {
+  width: 229px;
+  height: 40px;
+  font-family: 'Roboto',  sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+  color: #d2d2d2;
+  padding-left: 12px;
+}
+
+.button_mail_p {
+  margin-top: 11px;
+  text-align: center;
+  color: #fff;
+}
+
+#Capa_1 {
+  margin-top: 30px;
+}
